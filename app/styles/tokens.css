@@ -1,0 +1,27 @@
+@theme {
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "DM-sans", sans-serif;
+
+    --color-surface: #f5f0eb;
+    --color-surface2: #ede8e2;
+    --color-primary: #455041;
+
+    --color-text: #1a1a18;
+    --color-text-muted: #6b6b62;
+
+    --color-border: #ddd8d1;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+    --spacing-4xl: 96px;
+    --spacing-5xl: 128px;
+    --spacing-6xl: 160px;
+    --spacing-7xl: 240px;
+
+    --header-height: 58px;
+}
