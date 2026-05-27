@@ -16,7 +16,7 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
 
     return (
         <>
-            <section className="min-h-section mt-(--header-height)">
+            <section className="section-surface min-h-section mt-(--header-height)">
                 <div className="h-[60vh] md:h-[80vh] w-full relative">
                     <Image
                         src={project.images.gallery[0].src}
@@ -27,9 +27,9 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                         alt={project.images.gallery[0].alt}
                     />
                 </div>
-                <div className="base-x-p base-y-p w-full grid grid-cols-12 md:gap-x-xl md:gap-y-5xl">
+                <div className="base-x-p py-sm sm:py-sm md:py-sm lg:py-md xl:py-md w-full grid grid-cols-12 md:gap-x-xl md:gap-y-5xl">
                     <div className="col-span-12 md:col-span-6">
-                        <h2 className="text-display text-text pb-md md:mb-0 border-b border-text/20 md:border-0">
+                        <h2 className="text-h1 text-text pb-md md:mb-0 border-b border-text/20 md:border-0">
                             {project.title}, <span className="italic">{project.location}</span>
                         </h2>
                     </div>
@@ -76,7 +76,7 @@ export default function ProjectUnderpage({ project }: ProjectUnderpageProps) {
                             onClick={() => setIsGalleryOpen(true)}
                         />
                     </div>
-                    <div className="hidden md:block col-span-12 md:col-span-6">
+                    <div className="hidden md:block col-span-12 md:col-span-6 pb-xl md:pb-2xl xl:pb-4xl">
                         <div className="relative aspect-3/2 w-full overflow-hidden">
                             <Image
                                 src={project.images.gallery[1].src}

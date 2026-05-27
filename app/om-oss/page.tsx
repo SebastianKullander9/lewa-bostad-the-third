@@ -8,10 +8,8 @@ export default function Page() {
     return (
         <>
             <AboutHero />
-            <AboutQA />
-            <ProjectCTA background="section-surface" />
             <AboutValues />
-            <Contact />
+            <AboutQA />
         </>
     );
 }

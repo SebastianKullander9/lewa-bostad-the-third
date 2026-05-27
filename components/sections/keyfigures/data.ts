@@ -10,12 +10,12 @@ export const keyfigureData = [
         label: "Genomförda bostäder",
     },
     {
-        value: "XXX",
+        value: "665",
         suffix: "Mkr",
         label: "Resultat 2025",
     },
     {
-        value: "XX",
+        value: "97",
         suffix: "%",
         label: "Soliditet 2025",
     },

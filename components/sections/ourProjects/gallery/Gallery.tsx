@@ -35,13 +35,13 @@ export default function Gallery({ isGalleryOpen, project, onClick }: GalleryProp
                     <button
                         onClick={onClick}
                         type="button"
-                        className="flex flex-row items-center gap-xs h-full base-y-p hover:underline underline-offset-2"
+                        className="flex flex-row items-center gap-xs h-full py-sm sm:py-sm md:py-sm lg:py-md xl:py-md hover:underline underline-offset-2"
                     >
                         <IconChevronLeftFillDuo18 size={14} className="text-text" />
-                        <span className="text-body text-text">Gå tillbaka</span>
+                        <span className="text-body text-text mb-0">Gå tillbaka</span>
                     </button>
                     <div>
-                        <p className="text-text text-body">{project.title}</p>
+                        <p className="text-text text-body mb-0">{project.title}</p>
                     </div>
                 </div>
             </div>

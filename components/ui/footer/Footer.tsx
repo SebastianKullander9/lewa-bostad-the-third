@@ -1,47 +1,33 @@
 import Image from "next/image";
 import logo from "@/public/logo/logo_white.png";
 import Link from "next/link";
+import PrimaryButton from "../buttons/PrimaryButton";
 
 export default function Footer() {
     return (
-        <footer className="bg-primary text-surface base-x-p">
-            <div className="grid grid-cols-12 py-3xl border-b border-surface/10">
-                <div className="col-span-6 flex flex-col gap-sm">
-                    <Link
-                        href="/projekt"
-                        className="text-small hover:opacity-60 transition-opacity"
-                    >
-                        Våra projekt
-                    </Link>
-                    <Link href="/om-oss" className="text-small hover:opacity-60 transition-opacity">
-                        Om oss
-                    </Link>
+        <footer className="section-primary base-x-p pt-xl grid grid-cols-12">
+            <div className="col-span-12 md:col-span-6 base-y-p">
+                <div className="mb-xl">
+                    <h2 className="text-h1 mb-0 text-surface">Din bostadsresa börjar här.</h2>
+                    <h2 className="text-h1 text-surface">Med ett hej.</h2>
                 </div>
-                <div className="col-span-6 flex flex-col gap-sm items-end">
-                    <a
-                        href="mailto:xxx@lewabostad.se"
-                        className="text-small hover:opacity-60 transition-opacity"
-                    >
-                        xxx@lewabostad.se
-                    </a>
-                    <a
-                        href="tel:08000000"
-                        className="text-small hover:opacity-60 transition-opacity"
-                    >
-                        08-XXX XX XX
-                    </a>
+                <p className="text-body text-surface">
+                    Varmt välkommen att kontakta oss, så hjälper vi dig vidare.
+                </p>
+                <div className="md:max-w-35">
+                    <PrimaryButton label="Kontakta oss" type="button" />
                 </div>
             </div>
-
-            <p className="text-[12vw] text-surface/15 font-heading font-light leading-none uppercase tracking-tight pt-6xl">
-                Lewa Bostad
-            </p>
-
-            <div className="flex flex-row justify-between py-lg border-t border-surface/10">
-                <p className="text-small text-surface">© 2025 Lewa Bostad</p>
+            <div className="col-span-12 md:col-span-6 base-y-p flex items-end justify-start md:justify-end">
+                <Image src={logo} alt="" width={125} height={125} />
+            </div>
+            <div className="col-span-12 border-t border-surface/20 py-md flex items-center justify-between">
+                <p className="text-small text-surface/50">
+                    © {new Date().getFullYear()} Lewa Bostad
+                </p>
                 <Link
                     href="/integritetspolicy"
-                    className="text-small text-surface hover:opacity-60 transition-opacity"
+                    className="text-small text-surface/50 hover:text-surface transition-colors"
                 >
                     Integritetspolicy
                 </Link>

@@ -15,9 +15,9 @@ export default function Hamburger({ isOpen, setState }: HamburgerProps) {
                 aria-expanded={isOpen}
                 aria-controls="mobile-menu"
             >
-                <span className="w-5.5 h-0.5 bg-primary" />
-                <span className="w-5.5 h-0.5 bg-primary" />
-                <span className="w-5.5 h-0.5 bg-primary" />
+                <span className="w-5.5 h-0.5 bg-surface" />
+                <span className="w-5.5 h-0.5 bg-surface" />
+                <span className="w-5.5 h-0.5 bg-surface" />
             </button>
         </>
     );

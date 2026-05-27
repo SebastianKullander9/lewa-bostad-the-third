@@ -4,21 +4,17 @@ import KeyFigureCard from "./KeyFigureCard";
 export default function KeyFigures() {
     return (
         <section className="bg-primary text-surface">
-            <div className="grid grid-cols-12 base-x-p base-y-p gap-y-4xl md:gap-y-5xl">
-                {/* Top row — label + intro */}
-                <div className="col-span-12">
-                    <p className="text-small text-surface/70">Våra nyckeltal</p>
-                    <p className="text-lead max-w-prose">
-                        Vi är ett nytt bostadsföretag med etablerad grund. Koncernens nyckeltal
+            <div className="base-x-p base-y-p w-full grid grid-cols-12 gap-y-3xl">
+                <div className="col-span-12 md:col-span-4 flex flex-col text-center md:text-start">
+                    <h2 className="text-h1 text-surface">Etablerad erfarenhet.</h2>
+                    <p className="text-body text-surface">
+                        Vi är ett nytt bostadsföretag med etablerad grund. Kencernens nyckeltal
                         bygger på historik från de två bolag som nu bildar Lewa Bostad.
                     </p>
                 </div>
-
-                <div className="col-span-12 border-t border-surface/20" />
-
-                <div className="col-span-12 grid grid-cols-2 md:grid-cols-4 gap-2xl">
+                <div className="col-span-12 lg:col-start-6 xl:col-start-7 grid grid-cols-2 md:grid-cols-4 items-center md:divide-x md:divide-surface/20">
                     {keyfigureData.map((item, index) => (
-                        <KeyFigureCard key={index} {...item} />
+                        <KeyFigureCard key={index} {...item} index={index} />
                     ))}
                 </div>
             </div>

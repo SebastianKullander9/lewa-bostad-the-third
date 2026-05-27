@@ -1,3 +1,7 @@
+import img1 from "@/public/aboutQA/Glansbaggen_Vardagsrum_001.webp";
+import img2 from "@/public/aboutQA/Glansbaggen_kök_001.webp";
+import img3 from "@/public/aboutQA/Interior_2_002.webp";
+
 export const aboutQAData = [
     {
         title: "Vad bygger vi?",
@@ -5,6 +9,8 @@ export const aboutQAData = [
             Bostäderna har genomtänkta planlösningar med möjlighet till flera sociala ytor och egen
             trädgård med uteplats. Vi gör även rum för gemenskap och grannsämja mellan husen. Allt
             för att skapa levande kvarter där människor trivs.`,
+        image: img1,
+        orientation: "left",
     },
     {
         title: "Hur bygger vi?",
@@ -14,10 +20,14 @@ export const aboutQAData = [
             Hållbarhet går som en grön tråd i hela byggprocessen, från val av material till
             energilösningar och områdesplanering. Det ger hem med lägre klimatavtryck som håller
             med tiden.`,
+        image: img2,
+        orientation: "right",
     },
     {
         title: "Vem bygger vi för?",
         text: `Våra bostäder är planerade för att passa olika skeden av livet. Allt från växande barnfamiljer
 som väntar tillökning till par med stora barn som vill byta villalivet mot något mer bekvämt.`,
+        image: img3,
+        orientation: "left",
     },
 ];

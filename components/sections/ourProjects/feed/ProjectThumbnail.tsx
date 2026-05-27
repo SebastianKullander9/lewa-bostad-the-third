@@ -28,7 +28,7 @@ export default function ProjectThumbnail({ project, index }: ProjectThumbnailPro
                 <div className="mt-sm flex flex-row md:flex-col justify-between">
                     <div>
                         <p className="text-lead text-text">{project.title}</p>
-                        <p className="text-body text-text-muted group-hover:text-text transition-colors duration-200">
+                        <p className="text-body text-text-muted group-hover:text-text transition-colors duration-200 mb-0">
                             {project.location}
                         </p>
                     </div>

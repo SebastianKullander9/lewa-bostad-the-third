@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import logo from "@/public/logo/logo_green.png";
+import logo from "@/public/logo/logo_white.png";
 import Image from "next/image";
 import { menu } from "./menu";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <>
             <header
-                className="fixed w-full base-x-p base-y-p md:py-sm z-100 section-surface"
+                className="fixed w-full base-x-p base-y-p-header z-100 section-primary"
                 role="banner"
             >
                 <div className="flex flex-row justify-between items-center">
@@ -22,13 +22,13 @@ export default function Header() {
                         <Image
                             src={logo}
                             alt="The logo for the company lewa bostad"
-                            className="h-7 md:h-11 w-auto"
+                            className="h-7 md:h-9 w-auto"
                             priority
                         />
                     </Link>
 
                     <nav
-                        className="hidden md:flex  flex-row gap-3xl text-body"
+                        className="hidden md:flex flex-row gap-3xl text-body text-surface mb-0"
                         aria-label="Huvudnavigation"
                     >
                         {menu.map((item, index) => (
@@ -37,7 +37,7 @@ export default function Header() {
                             </Link>
                         ))}
                     </nav>
-                    <div className="md:hidden">
+                    <div className="md:hidden cursor-pointer z-9999">
                         <Hamburger isOpen={isOpen} setState={setIsOpen} />
                     </div>
                 </div>

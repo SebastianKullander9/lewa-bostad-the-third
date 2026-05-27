@@ -27,51 +27,63 @@
     }
 
     .base-x-p {
-        @apply px-md md:px-lg;
+        @apply px-md md:px-lg xl:px-3xl 2xl:px-4xl;
     }
 
     .base-y-p {
-        @apply py-md md:py-lg;
+        @apply py-xl md:py-2xl lg:py-3xl xl:py-3xl 2xl:py-4xl;
     }
 
-    .text-display {
-        @apply font-heading text-[32px] lg:text-[48px] leading-[1.2] tracking-[-0.02em] font-thin;
+    .base-y-p-header {
+        @apply py-md lg:py-md;
+    }
+
+    .base-gap {
+        @apply gap-md md:gap-lg xl:gap-4xl;
     }
 
     .text-h1 {
-        @apply font-heading text-[36px] lg:text-[52px] leading-[1.1] tracking-[-0.02em] font-light;
+        @apply font-heading text-[32px] md:text-[42px] lg:text-[50px] xl:text-[54px] 2xl:text-[58px] leading-[1.2] tracking-[-0.02em] font-thin mb-md md:mb-md text-text;
     }
 
     .text-h2 {
-        @apply font-heading text-[26px] lg:text-[36px] leading-[1.2] tracking-[-0.01em] font-light;
+        @apply font-heading text-[26px] md:text-[32px] lg:text-[36px] xl:text-[38px] 2xl:text-[40px] leading-[1.2] tracking-[-0.02em] font-light;
     }
 
     .text-h3 {
-        @apply font-heading text-[20px] lg:text-[26px] leading-[1.3] tracking-[-0.01em] font-light;
+        @apply font-heading text-[20px] md:text-[24px] lg:text-[26px] xl:text-[27px] 2xl:text-[28px] leading-[1.3] tracking-[-0.01em] font-light;
     }
 
     .text-lead {
-        @apply font-body text-[16px] lg:text-[18px] leading-[1.8] tracking-normal font-light;
+        @apply font-body text-[17px] lg:text-[19px] xl:text-[20px] leading-[1.8] tracking-normal font-light;
     }
 
     .text-body {
-        @apply font-body text-[14px] lg:text-[16px] leading-[1.7] tracking-normal font-normal;
+        @apply font-body text-[14px] lg:text-[15px] xl:text-[16px] leading-[1.7] tracking-normal font-normal mb-md text-primary;
     }
 
     .text-body-test {
-        @apply font-body text-[14px] lg:text-[16px] tracking-normal leading-tight font-medium;
+        @apply font-body text-[14px] lg:text-[15px] xl:text-[16px] tracking-normal leading-tight font-medium;
     }
 
     .text-small {
         @apply font-body text-[12px] lg:text-[13px] leading-relaxed tracking-normal font-normal;
     }
 
+    .text-quote {
+        @apply font-heading text-[32px] md:text-[32px] lg:text-[42px] xl:text-[48px] 2xl:text-[58px] leading-[1.2] tracking-[-0.02em] font-thin mb-md md:mb-xl text-text italic;
+    }
+
+    .text-category {
+        @apply font-body text-[14px] md:text-[16px] leading-none tracking-[0.2em] font-medium uppercase mb-md text-primary;
+    }
+
     .text-keyfigure {
-        @apply text-6xl;
+        @apply text-5xl md:text-5xl xl:text-6xl;
     }
 
     .link-hover-fade {
-        @apply hover:text-[#455041]/60 transition-colors duration-200;
+        @apply hover:text-[#f5f0eb]/60 transition-colors duration-200;
     }
 
     /* Label — uppercase metadata style */
@@ -85,10 +97,20 @@
 
     .section-surface {
         @apply bg-surface text-primary;
+        --btn-bg: var(--color-primary);
+        --btn-text: var(--color-surface);
     }
 
     .section-surface2 {
         @apply bg-surface2 text-primary;
+        --btn-bg: var(--color-primary);
+        --btn-text: var(--color-surface);
+    }
+
+    .section-primary {
+        @apply bg-primary text-surface;
+        --btn-bg: var(--color-surface);
+        --btn-text: var(--color-primary);
     }
 
     @layer utilities {
