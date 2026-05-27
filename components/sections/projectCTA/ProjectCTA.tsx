@@ -20,11 +20,7 @@ export default function ProjectCTA({ background = "section-surface2" }: ProjectC
                             varje detalj.
                         </p>
                         <div className="max-w-35 hidden md:block mb-md">
-                            <PrimaryButton
-                                background="surface"
-                                label="Alla projekt"
-                                type="button"
-                            />
+                            <PrimaryButton label="Alla projekt" type="button" />
                         </div>
                     </div>
                 </div>
